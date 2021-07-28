@@ -24,12 +24,12 @@
 // daysOfWeek.push("sun");
 // console.log(daysOfWeek);
 
-const player = {
-    name: "hajin",
-    points: 10,
-    fat: false,
-};
-console.log(player);
-player.lastName = "potato";
-player.potints = player.points + 15;
-console.log(player);
+// const player = {
+//     name: "hajin",
+//     points: 10,
+//     fat: false,
+// };
+// console.log(player);
+// player.lastName = "potato";
+// player.potints = player.points + 15;
+// console.log(player);
