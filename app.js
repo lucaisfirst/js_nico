@@ -33,3 +33,13 @@
 // player.lastName = "potato";
 // player.potints = player.points + 15;
 // console.log(player);
+
+
+ function sayHello() {
+     console.log("Hello!");
+ }
+
+ sayHello();
+ sayHello();
+ sayHello();
+ sayHello();
