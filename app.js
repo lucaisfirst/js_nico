@@ -35,11 +35,9 @@
 // console.log(player);
 
 
- function sayHello() {
-     console.log("Hello!");
+ function sayHello(nameOfPerson, age) {
+     console.log("Hello my name is " + nameOfPerson + "and I'm " + age);
  }
-
- sayHello();
- sayHello();
- sayHello();
- sayHello();
+sayHello("jin", 20);
+sayHello("luca", 21);
+sayHello("suzu", 19);
