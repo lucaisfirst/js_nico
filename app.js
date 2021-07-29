@@ -50,6 +50,7 @@
 // plus(8, 60);
 // divide(100, 23);
 
+//function 이용해서 정보 보내는 방식에 대한 이해
 const player = {
   name: "luca",
   sayHello: function (otherPersonsName) {
