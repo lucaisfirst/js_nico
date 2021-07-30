@@ -72,9 +72,59 @@
 // console.log(player.name);
 
 //Recap!
-const toBuy = ["potato", "tomato", "pizza"];
-console.log(toBuy);
-toBuy[2] = "water";
-console.log(toBuy);
-toBuy.push("meat");
-console.log(toBuy);
+// const toBuy = ["potato", "tomato", "pizza"];
+// console.log(toBuy);
+// toBuy[2] = "water";
+// console.log(toBuy);
+// toBuy.push("meat");
+// console.log(toBuy);
+
+// const player = {
+//   name: "luca",
+//   age: 100,
+// };
+
+// console.log(player);
+// player.name = "lucaisfirst";
+// console.log(player);
+// player.sexy = "soon";
+// console.log(player);
+
+// function plus(a, b) {
+//   console.log(a + b);
+// }
+
+// plus(3, 2);
+// plus(56, 12);
+
+// function minusFive(potato) {
+//   console.log(potato - 5);
+// }
+
+// minusFive(10, 2, 3, 43, 32);
+
+// const calculator = {
+//   add: function (a, b) {
+//     console.log(a + b);
+//   },
+// };
+// calculator.add(2, 3);
+
+const calculator = {
+  add: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  divide: function (a, b) {
+    console.log(a / b);
+  },
+  pow: function (a, b) {
+    console.log(a ** b);
+  },
+};
+calculator.add(1, 2);
+calculator.minus(2, 1);
+calculator.divide(12, 3);
+calculator.pow(2, 4);
