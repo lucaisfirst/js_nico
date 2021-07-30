@@ -177,5 +177,4 @@
 //conditionals
 //parseInt로 숫자인지 아닌지 판단하는 방법을 배웠다.
 const age = parseInt(prompt("How old are you?"));
-
 console.log(age);
