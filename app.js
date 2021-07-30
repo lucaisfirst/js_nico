@@ -112,11 +112,14 @@
 
 // //homework
 // const calculator = {
-//   add: function (a, b) {
+//   plus: function (a, b) {
 //     console.log(a + b);
 //   },
 //   minus: function (a, b) {
 //     console.log(a - b);
+//   },
+//   times: function (a, b) {
+//     console.log(a * b);
 //   },
 //   divide: function (a, b) {
 //     console.log(a / b);
@@ -125,7 +128,48 @@
 //     console.log(a ** b);
 //   },
 // };
-// calculator.add(1, 2);
+
+// calculator.plus(1, 2);
 // calculator.minus(2, 1);
+// calculator.times(4, 6);
 // calculator.divide(12, 3);
 // calculator.pow(2, 4);
+
+// const age = 98;
+// function calculateKrAge(ageOfForeigner) {
+//   ageOfForeigner + 2;
+//   return "hello";
+// }
+
+// const krAge = calculateKrAge(age);
+
+// console.log(krAge);
+
+const calculator = {
+  plus: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  times: function (a, b) {
+    return a * b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+  power: function (a, b) {
+    return a ** b;
+  },
+};
+
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 2);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.power(divideResult, 2);
+console.log(plusResult);
+console.log(minusResult);
+console.log(timesResult);
+console.log(divideResult);
+console.log(powerResult);
