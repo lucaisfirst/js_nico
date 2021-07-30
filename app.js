@@ -51,12 +51,21 @@
 // divide(100, 23);
 
 //function 이용해서 정보 보내는 방식에 대한 이해
+// const player = {
+//   name: "luca",
+//   sayHello: function (otherPersonsName) {
+//     console.log("hello " + otherPersonsName + " nice to meet you!");
+//   },
+// };
+
+// console.log(player.name);
+// player.sayHello("luca");
+
 const player = {
-  name: "luca",
-  sayHello: function (otherPersonsName) {
-    console.log("hello " + otherPersonsName + " nice to meet you!");
+  name: "suzu",
+  sayHello: function (othherPersonsNumber) {
+    console.log("hello! " + othherPersonsNumber + " is your number!");
   },
 };
 
-console.log(player.name);
-player.sayHello("luca");
+player.sayHello(190);
