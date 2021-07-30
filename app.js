@@ -61,11 +61,20 @@
 // console.log(player.name);
 // player.sayHello("luca");
 
-const player = {
-  name: "suzu",
-  sayHello: function (othherPersonsNumber) {
-    console.log("hello! " + othherPersonsNumber + " is your number!");
-  },
-};
+// const player = {
+//   name: "suzu",
+//   sayHello: function (othherPersonsNumber) {
+//     console.log("hello! " + othherPersonsNumber + " is your number!");
+//   },
+// };
 
-player.sayHello(190);
+// player.sayHello(190);
+// console.log(player.name);
+
+//Recap!
+const toBuy = ["potato", "tomato", "pizza"];
+console.log(toBuy);
+toBuy[2] = "water";
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
