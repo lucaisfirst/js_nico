@@ -110,21 +110,22 @@
 // };
 // calculator.add(2, 3);
 
-const calculator = {
-  add: function (a, b) {
-    console.log(a + b);
-  },
-  minus: function (a, b) {
-    console.log(a - b);
-  },
-  divide: function (a, b) {
-    console.log(a / b);
-  },
-  pow: function (a, b) {
-    console.log(a ** b);
-  },
-};
-calculator.add(1, 2);
-calculator.minus(2, 1);
-calculator.divide(12, 3);
-calculator.pow(2, 4);
+// //homework
+// const calculator = {
+//   add: function (a, b) {
+//     console.log(a + b);
+//   },
+//   minus: function (a, b) {
+//     console.log(a - b);
+//   },
+//   divide: function (a, b) {
+//     console.log(a / b);
+//   },
+//   pow: function (a, b) {
+//     console.log(a ** b);
+//   },
+// };
+// calculator.add(1, 2);
+// calculator.minus(2, 1);
+// calculator.divide(12, 3);
+// calculator.pow(2, 4);
