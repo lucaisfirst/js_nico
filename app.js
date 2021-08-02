@@ -189,21 +189,23 @@
 // true && false === false;
 // false && false === false;
 
-const age = parseInt(prompt("How old are you?"));
+// const age = parseInt(prompt("How old are you?"));
 
-if (isNaN(age) || age < 0) {
-  console.log("Please real positive number write a number");
-} else if (age < 18) {
-  console.log("You are too young.");
-} else if (age >= 18 && age <= 50) {
-  console.log("You can drink");
-} else if (age > 50 && age <= 80) {
-  console.log("You should exercise");
-} else if (age > 80) {
-  console.log("You can do whatever you want.");
-} else if (age !== 100) {
-  console.log("wow you are wise");
-}
+// if (isNaN(age) || age < 0) {
+//   console.log("Please real positive number write a number");
+// } else if (age < 18) {
+//   console.log("You are too young.");
+// } else if (age >= 18 && age <= 50) {
+//   console.log("You can drink");
+// } else if (age > 50 && age <= 80) {
+//   console.log("You should exercise");
+// } else if (age > 80) {
+//   console.log("You can do whatever you want.");
+// } else if (age !== 100) {
+//   console.log("wow you are wise");
+// }
 
-if ((a && b) || (c && d)) {
-}
+// if ((a && b) || (c && d)) {
+// }
+
+document.title = "Hello! From JS!";
