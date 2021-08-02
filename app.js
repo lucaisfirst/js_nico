@@ -210,3 +210,9 @@
 
 //js에서 html의 요소들을 변경하고 바꿀 수 있다는 것이다.
 // document.title = "Hello! From JS!";
+const title = document.getElementById("title");
+
+title.innerText = "Got you!";
+
+console.log(title.id);
+console.log(title.className);
