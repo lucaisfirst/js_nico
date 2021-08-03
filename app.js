@@ -209,17 +209,17 @@
 // }
 
 //js에서 html의 요소들을 변경하고 바꿀 수 있다는 것이다.
-// document.title = "Hello! From JS!";
-// const title = document.getElementById("title");
+// document.h1 = "Hello! From JS!";
+// const h1 = document.getElementById("h1");
 
-// title.innerText = "Got you!";
+// h1.innerText = "Got you!";
 
-// console.log(title.id);
-// console.log(title.className);
+// console.log(h1.id);
+// console.log(h1.className);
 
 // //searching for elements
-// const title = document.querySelector(".hello h1");
-// title.innerText = "hello";
+// const h1 = document.querySelector(".hello h1");
+// h1.innerText = "hello";
 // // 정리
 // // - getElementsByClassName() : 많은 element를 가져올때 씀(array를 반환)
 // // - getElementsByTagName() : name을 할당할 수 있음(array를 반환)
@@ -233,21 +233,40 @@
 // // 하지만 후자는 하위요소 가져오는 것을 못하므로 전자만 쓸거다
 
 //Events detect click
-const title = document.querySelector(".hello:first-child h1");
-
-console.dir(title);
+const h1 = document.querySelector(".hello:first-child h1");
 
 function handleTitleClick() {
-  title.style.color = "blue";
+  h1.style.color = "blue";
 }
 
 function handleMouseEnter() {
-  title.innerText = "Mouse is here!";
+  h1.innerText = "Mouse is here!";
 }
 
 function handleMouseLeave() {
-  title.innerText = "Mouse is gone!";
+  h1.innerText = "Mouse is gone!";
 }
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
+
+function handleWindowResize() {
+  document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+  alert("copier!");
+}
+
+function handleWindowOffline() {
+  alert("SOS no WIFI");
+}
+
+function handleWindowOnline() {
+  alert("ALL GOOD!");
+}
+h1.addEventListener("click", handleTitleClick);
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
