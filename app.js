@@ -232,8 +232,11 @@
 // // - querySelector("#hello); 와 getElementById("hello"); 는 같은 일을 하는 것임
 // // 하지만 후자는 하위요소 가져오는 것을 못하므로 전자만 쓸거다
 
-//Events
+//Events detect click
 const title = document.querySelector(".hello:first-child h1");
-console.dir(title);
-title.innerText = "Hello";
-title.style.color = "blue";
+
+function handleTitleClick() {
+  title.style.color = "blue";
+}
+
+title.addEventListener("click", handleTitleClick);
