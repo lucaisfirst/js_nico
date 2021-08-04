@@ -286,16 +286,25 @@
 
 // h1.addEventListener("click", handleTitleClick);
 
-//CSS in Javascript 위 예시와 동일한 기능을 수행하는 코드를 CSS와 나눠서
+// //CSS in Javascript 위 예시와 동일한 기능을 수행하는 코드를 CSS와 나눠서
+// const h1 = document.querySelector(".hello:first-child h1");
+
+// function handleTitleClick() {
+//   const clickedClass = "clicked";
+//   if (h1.classList.contains(clickedClass)) {
+//     h1.classList.remove(clickedClass);
+//   } else {
+//     h1.classList.add(clickedClass);
+//   }
+// }
+
+// h1.addEventListener("click", handleTitleClick);
+
+//toggle 함수를 이용해 위와 같은 코드를 만들어보자. 더욱 간단하게
 const h1 = document.querySelector(".hello:first-child h1");
 
 function handleTitleClick() {
-  const clickedClass = "clicked";
-  if (h1.className === clickedClass) {
-    h1.className = "";
-  } else {
-    h1.className = clickedClass;
-  }
+  h1.classList.toggle("clicked");
 }
 
 h1.addEventListener("click", handleTitleClick);
