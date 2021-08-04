@@ -286,17 +286,16 @@
 
 // h1.addEventListener("click", handleTitleClick);
 
+//CSS in Javascript 위 예시와 동일한 기능을 수행하는 코드를 CSS와 나눠서
 const h1 = document.querySelector(".hello:first-child h1");
 
 function handleTitleClick() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato";
+  const clickedClass = "clicked";
+  if (h1.className === clickedClass) {
+    h1.className = "";
   } else {
-    newColor = "blue";
+    h1.className = clickedClass;
   }
-  h1.style.color = newColor;
 }
 
 h1.addEventListener("click", handleTitleClick);
